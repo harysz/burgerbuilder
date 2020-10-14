@@ -8,7 +8,9 @@ import NavigationItem from './NavigationItem/NavigationItem';
 const navigationItems=(props)=> {
     return (
         <ul className={classes.NavigationItems}>
-            <NavigationItem />
+            <NavigationItem link='/' active>Burger builder </NavigationItem>
+            <NavigationItem link='/'> Chekcout </NavigationItem>
+       
         </ul>
     )
 }
