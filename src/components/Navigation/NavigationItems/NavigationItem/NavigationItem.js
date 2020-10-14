@@ -1,6 +1,7 @@
 import React from 'react';
 
+import classes from './NavigationItem.css';
 const navigationItem = () =>{
-    <li><a href=''> A link</a></li>
+    return <li className={classes.NavigationItem}><a href=''> A link</a></li>
 }
 export default navigationItem;
