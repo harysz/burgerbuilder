@@ -84,6 +84,8 @@ class BurgerBuilder extends Component {
   purchaseContinueHandler = () => {
     // alert('You continue!');
     this.setState({loading:true});
+
+  
     const order = {
         ingredients:this.state.ingredients,
         price:this.state.totalPrice,
@@ -118,6 +120,7 @@ class BurgerBuilder extends Component {
     for (let key in disableInfo){
       disableInfo[key]=disableInfo[key] <=0;
     }
+
     if(this.state.loading){
       orderSummary = <Spinner/>;
     }
